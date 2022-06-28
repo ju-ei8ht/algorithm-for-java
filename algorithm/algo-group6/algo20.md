@@ -17,4 +17,4 @@ class Solution {
     }
 }
 ```
-[!문제 해설](algo20.png)
+![문제 해설](algo20.png)
