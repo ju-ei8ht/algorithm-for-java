@@ -1,17 +1,17 @@
 ```java
 import java.util.Arrays;
 class Solution {
-    public String solution(String[] participant, String[] completion) {
+    public String solution(String[] p, String[] c) {
         String answer = "";
-        Arrays.sort(participant);
-        Arrays.sort(completion);
-        for(int i = 0; i < completion.length; i++){
-            if(!participant[i].equals(completion[i])){
-                return participant[i];
+        Arrays.sort(p);
+        Arrays.sort(c);
+        for(int i = 0; i < c.length; i++){
+            if(!p[i].equals(c[i])){
+                return p[i];
             }
         }
         if (answer == ""){
-            answer = participant[participant.length-1];
+            answer = p[p.length-1];
         }
         return answer;
     }
